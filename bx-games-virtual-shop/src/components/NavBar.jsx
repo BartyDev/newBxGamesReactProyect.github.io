@@ -3,10 +3,10 @@ import CartWidget from "./CartWidget";
 
 const NavBar = () => {
     return (
-        <div className="row">
+        <div className="container">
             <nav className="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/HOME"><img src={"imgs/bx-game-logo-bg0.png"} alt={"Logo De Bx Game Store"} width={120} /></a>
+                    <a className="navbar-brand" href="/HOME"><img src={"imgs/bx-game-logo-bg0.png"} alt={"Logo De Bx Game Store"} width={140} /></a>
                     <button className="navbar-toggler custom-toggler fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -47,7 +47,7 @@ const NavBar = () => {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link disabled text-success" href="/error-404">error 404</a>
+                                    <a className="nav-link disabled text-warning" href="/error-404">error 404</a>
                                 </li>
                             </ul>
                             <hr className="colorActive" />
