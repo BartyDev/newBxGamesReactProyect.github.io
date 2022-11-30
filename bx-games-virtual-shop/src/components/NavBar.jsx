@@ -28,20 +28,20 @@ const NavBar = () => {
                                         <li><a className="dropdown-item" href="/">PROXIMOS LANZAMIENTOS</a></li>
                                         <li><a className="dropdown-item" href="/">RESERVAS</a></li>
                                         <li>
-                                            <hr className="dropdown-divider colorActive" />
+                                            <hr className="dropdown-divider colorActive"/>
                                         </li>
-                                        <li><a className="dropdown-item" href="/">CONSOLAS</a></li>
+                                     <li><a className="dropdown-item" href="/">CONSOLAS</a></li>
                                         <li><a className="dropdown-item" href="/">RECURSOS</a></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="/SOPORTE-24-7" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" href="/SOPORTE" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     SOPORTE 24/7
                                     </a>
                                     <ul className="dropdown-menu sectionBackApp colorRender">
                                         <li><a className="dropdown-item" href="/">CONTACTOS</a></li>
                                         <li>
-                                            <hr className="dropdown-divider colorActive" />
+                                            <hr className="dropdown-divider colorActive"/>
                                         </li>
                                         <li><a className="dropdown-item" href="/">PREGUNTAS FRECUENTES</a></li>
                                     </ul>
@@ -50,7 +50,7 @@ const NavBar = () => {
                                     <a className="nav-link disabled text-warning" href="/error-404">error 404</a>
                                 </li>
                             </ul>
-                            <hr className="colorActive" />
+                            <hr className="colorActive"/>
                             <div className="col-md-1">
                                 <CartWidget />
                             </div>

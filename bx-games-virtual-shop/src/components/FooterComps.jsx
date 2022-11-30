@@ -4,7 +4,7 @@ const FooterComps = () => {
     return (
         <div className="container-fluid footerBackApp">
             <div className="container">
-                <footer className="py-5">
+                <footer className="pt-5">
                     <div className="row align-items-center navTextWhiteApp">
                         <div className="col-12 col-lg-3 col-md-3">
                             <img src={"imgs/mario.png"} width={140} />
@@ -40,7 +40,7 @@ const FooterComps = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <div className="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
                         <p className="mb-0">&copy; 2022 Bx' Games, Inc. All rights reserved.</p>
                         <p className="mb-2 text-center">Created with 💚 by bartyDv</p>
                     </div>
