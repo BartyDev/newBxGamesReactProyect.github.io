@@ -7,7 +7,7 @@ const FooterComps = () => {
         <footer className="pt-5">
           <div className="row align-items-center navTextWhiteApp">
             <div className="col-12 col-lg-3 col-md-3">
-              <img src={"imgs/mario.png"} width={140} />
+              <img src={"/imgs/mario.png"} width={140} />
             </div>
             <div className="col-12 col-lg-4 col-md-2">
               <ul className="nav flex-column colorRender">
@@ -81,7 +81,7 @@ const FooterComps = () => {
                     type="button"
                     className="btn bg-black py-3 px-4 border-white"
                   >
-                    <img src={"imgs/apple-font.svg"} width={90} />
+                    <img src={"/imgs/apple-font.svg"} width={90} />
                   </a>
                 </div>
                 <div>
@@ -90,7 +90,7 @@ const FooterComps = () => {
                     type="button"
                     className="btn bg-black py-3 px-4  border-white"
                   >
-                    <img src={"imgs/android-font.svg"} width={90} />
+                    <img src={"/imgs/android-font.svg"} width={90} />
                   </a>
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
 
 const NavBar = () => {
@@ -9,13 +10,13 @@ const NavBar = () => {
         aria-label="Offcanvas navbar large"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/HOME">
+          <Link className="navbar-brand" to={"/"}>
             <img
-              src={"imgs/bx-game-logo-bg0.png"}
+              src={"/imgs/bx-game-logo-bg0.png"}
               alt={"Logo De Bx Game Store"}
               width={140}
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler custom-toggler fs-3"
             type="button"
@@ -32,13 +33,13 @@ const NavBar = () => {
             aria-labelledby="offcanvasNavbar2Label"
           >
             <div className="offcanvas-header">
-              <a className="navbar-brand" href="/HOME">
+              <Link className="navbar-brand" to={"/"}>
                 <img
-                  src={"imgs/bx-game-logo-bg0.png"}
+                  src={"/imgs/bx-game-logo-bg0.png"}
                   alt={"Logo De Bx Game Store"}
                   width={100}
                 />
-              </a>
+              </Link>
               <button
                 type="button"
                 className="btn-close btn-close-icon fs-2"
@@ -49,83 +50,16 @@ const NavBar = () => {
             <div className="offcanvas-body navTextWhiteApp">
               <ul className="navbar-nav justify-content-center flex-grow-1 gap-3 colorRender">
                 <li className="nav-item">
-                  <a
-                    className="nav-link colorActive"
-                    aria-current="page"
-                    href="/TENDENCIAS"
-                  >
-                    TENDENCIAS
-                  </a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="/TIENDA"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    TIENDA
-                  </a>
-                  <ul className="dropdown-menu sectionBackApp colorRender">
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        PROXIMOS LANZAMIENTOS
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        RESERVAS
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider colorActive" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        CONSOLAS
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        RECURSOS
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="/SOPORTE"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    SOPORTE 24/7
-                  </a>
-                  <ul className="dropdown-menu sectionBackApp colorRender">
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        CONTACTOS
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider colorActive" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        PREGUNTAS FRECUENTES
-                      </a>
-                    </li>
-                  </ul>
+                  <NavLink className="nav-link" aria-current="page" to={"/category/tendencias"}>TENDENCIAS</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link disabled text-warning"
-                    href="/error-404"
-                  >
-                    error 404
-                  </a>
+                  <NavLink className="nav-link" to={"/category/lanzamientos"}>PROXIMOS LANZAMIENTOS</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link disabled text-secondary" to={"/category/soporte"}>SOPORTE 24/7</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to={"/category/"}>ERROR 404</NavLink>
                 </li>
               </ul>
               <hr className="colorActive" />
