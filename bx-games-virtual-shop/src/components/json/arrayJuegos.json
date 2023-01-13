@@ -1,5 +1,6 @@
-[{
-    "id": 1,
+[
+    {
+    "index": 1,
     "titulo": "Call of Duty: Modern Warfare II Vault Edition",
     "tipo": "Cooperación, Cooperativo online, Multijugador, Multijugador multiplataforma, Un solo jugador, Acción",
     "descripcion": "Call of Duty: Modern Warfare II transporta a los jugadores a un conflicto global sin precedentes y trae de vuelta los icónicos Operadores de la fuerza Operativa 141.Infinity Ward trae a los fans una jugabilidad de última generación, un nuevo manejo de armas, un sistema de IA avanzado, un nuevo armero y otras innovaciones gráficas y de jugabilidad que elevan la franquicia a nuevas alturas.",
@@ -13,7 +14,7 @@
     "categoria": "lanzamientos"
 },
 {
-    "id": 2,
+    "index": 2,
     "titulo": "Marvel's Spider-Man Remastered",
     "tipo": "Un solo jugador, Acción, Aventura",
     "descripcion": "Marvel's Spider-Man Remastered para PC es una versión renovada del juego de acción y aventura de 2018. Con una jugabilidad en tercera persona, asumes el personaje del hombre araña, Spider-Man, lidiando con la vida personal de Peter Parker, así como luchando contra el villano superhumano Míster Negativo en su intento de apoderarse de los bajos fondos de Nueva York.",
@@ -27,7 +28,7 @@
     "categoria": "tendencias"        
 },
 {
-    "id": 3,
+    "index": 3,
     "titulo": "FIFA 23 PS5",
     "tipo": "Un solo jugador, Simulación, Deporte",
     "descripcion": "The World's Game ~ EA SPORTS FIFA 23 lleva el juego del mundo al campo, con la tecnología HyperMotion2 que ofrece una experiencia de juego aún más realista, tanto la FIFA World Cup masculina como la femenina que llegará al juego más adelante durante la temporada con actualizaciones tras el lanzamiento, la incorporación de equipos femeninos, funciones de juego cruzado* y mucho más.",
@@ -41,7 +42,7 @@
     "categoria": "lanzamientos"
 },
 {
-    "id": 4,
+    "index": 4,
     "titulo": "Gotham Knights",
     "tipo": "Cooperación, Cooperativo online, Un solo jugador, Acción, Aventura, RPG",
     "descripcion": "Batman ha muerto. Un submundo nuevo de criminales se ha propagado por las calles de Gotham City. Ahora todo depende de Batgirl, Nightwing, Red Hood y Robin. En sus manos queda proteger Gotham, devolver la esperanza a sus ciudadanos, la disciplina a sus policías y el miedo a sus criminales.",
@@ -55,7 +56,7 @@
     "categoria": "tendencias"
 },
 {
-    "id": 5,
+    "index": 5,
     "titulo": "God of War",
     "tipo": "Un solo jugador, Acción, Aventura, RPG",
     "descripcion": "La trama del juego se desarrolla en el contexto de los dioses nórdicos en esta iteración, en lugar de la Antigua Grecia de los juegos originales, y se desarrolla libremente en la Escandinavia medieval en el reino de Midgard, que es el equivalente nórdico de las tierras habitadas por los primeros humanos cuando el mundo aún era joven.",
@@ -69,7 +70,7 @@
     "categoria": "tendencias"
 },
 {
-    "id": 6,
+    "index": 6,
     "titulo": "Yu-Gi-Oh! Legacy of the Duelist: Link Evolution",
     "tipo": "Un solo jugador, Simulación",
     "descripcion": "¡Es hora del Duelo!.Vive más de 20 años de la historia de Yu-Gi-Oh! con Yu-Gi-Oh! Legacy of the Duelist: Link Evolution!.Construye tu baraja con más de 10.000 cartas y enfréntate a los duelistas más famosos del universo de Yu-Gi-Oh! Vuelve a vivir las historias de la serie de animación original de Yu-Gi-Oh! con Yu-Gi-Oh! ARC-V y desafía a la nueva generación de duelistas del mundo virtual de Yu-Gi-Oh! VRAINS!",
@@ -83,7 +84,7 @@
     "categoria": "tendencias"
 },
 {
-    "id": 7,
+    "index": 7,
     "titulo": "Stray",
     "tipo": "Un solo jugador, Aventura, Indies",
     "descripcion": "Stray para PC es un juego de acción y aventura en el que el jugador se pone en la piel de un gato callejero que se topa con una misteriosa ciudad amurallada. La ciudad amurallada está basada en la verdadera ciudad amurallada de Kowloon, en Hong Kong, una zona ahora demolida que se prestaba a la extrañeza, el misterio y un toque de rebelión (la razón, quizá, de la demolición en la vida real).",
@@ -97,7 +98,7 @@
     "categoria": "tendencias"
 },
 {
-    "id": 8,
+    "index": 8,
     "titulo": "Battlefield 2042",
     "tipo": "PvP online, Acción, Aventura",
     "descripcion": "Battlefield 2042 para PC es un FPS con un fuerte enfoque multijugador. El juego, el duodécimo de la serie, que también cuenta con más de cuarenta DLCs lo largo de la franquicia, se desarrolla en un futuro bastante cercano (como lo demuestra el nombre), lo que significa que hay muchas armas y artilugios futuristas y de alta tecnología, como drones desplegables, torretas y perros robot.",
@@ -111,7 +112,7 @@
     "categoria": "tendencias"
 },
 {
-    "id": 9,
+    "index": 9,
     "titulo": "A Plague Tale: Requiem",
     "tipo": "Un solo jugador, Acción, Aventura",
     "descripcion": "Más allá del mar, en una isla… ...Vive una aventura desgarradora por un mundo asombroso y despiadado, retorcido por las fuerzas sobrenaturales.Tras huir de su hogar devastado, Amicia y Hugo viajan al sur, hacia nuevas regiones y bulliciosas ciudades, para comenzar de nuevo y controlar la maldición.",
@@ -125,7 +126,7 @@
     "categoria": "lanzamientos"
 },
 {
-    "id": 10,
+    "index": 10,
     "titulo": "Scorn",
     "tipo": "Un solo jugador, Acción, Aventura, Indies",
     "descripcion": "Scorn es un juego evocador de aventuras de miedo en primera persona con un ambiente propio de un universo tenebroso plagado de formas extrañas y una complejidad lúgubre.Está diseñado en base a la idea de 'aparecer en el mundo'. A solas y sin rumbo, explorarás las distintas regiones conectadas entre sí de forma no lineal. El propio entorno tan perturbador es un personaje en sí.",
@@ -139,7 +140,7 @@
     "categoria": "lanzamientos"
 },
 {
-    "id": 11,
+    "index": 11,
     "titulo": "Minecraft",
     "tipo": "Cooperación, Cooperativo local, Cooperativo online, Multijugador, Multijugador multiplataforma, Un solo jugador, Acción, Aventura",
     "descripcion": "Explora mundos generados aleatoriamente y construye cosas maravillosas, desde una simple casa hasta un fastuoso castillo. Juega en modo creativo con recursos ilimitados o excava hasta las profundidades del mundo en el modo supervivencia y fabrica armas y armaduras para defenderte de peligrosas criaturas. Escala escarpadas montañas, descubre intrincadas cuevas y excava grandes vetas de minerales. Descubre los biomas de cuevas frondosas y cuevas de espeleotema.",
@@ -153,7 +154,7 @@
     "categoria": "tendencias"
 },
 {
-    "id": 12,
+    "index": 12,
     "titulo": "Just Dance 2021",
     "tipo": "Dance, Otro",
     "descripcion": "Just Dance 2021 es el juego de baile definitivo, con 40 nuevos éxitos como «Don't Start Now», de Dua Lipa; «Feel Special», de TWICE; y «Señorita» de Shawn Mendes y Camila Cabello. ¡Monta una fiesta y baila con famila y amigos!",

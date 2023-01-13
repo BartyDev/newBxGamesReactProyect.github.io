@@ -1,31 +1,34 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
+import { useParams} from "react-router-dom";
 import ItemList from "./ItemList";
-import arrayJuegos from "./json/arrayJuegos.json";
+import Loading from "./Loading";
+
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
-  const { id } = useParams();
+  const [loading, setLoading] = useState(true);
+  const {id} = useParams();
 
 
   useEffect(() => {
-    const promesa = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(id ? arrayJuegos.filter(item => item.categoria === id) : arrayJuegos);
-      }, 2000);
-    });
+    const db = getFirestore();
+    const itemsCollection = collection(db, "items");
 
-    promesa.then((data) => {
-      console.log(data);
-      setItems(data);
-    })
-  }, [id]);
+    const q = id ? query(itemsCollection, where("categoria", "==", id)) : itemsCollection;
+    getDocs(q).then((snapShot) => {
+        setItems(snapShot.docs.map((doc) => ({id:doc.id, ...doc.data()})));
+        setLoading(false);
+    });
+}, [id]);
+
+
 
 
   return (
     <div className="container py-5">
       <div className="row justify-content-center pt-5">
-        <ItemList items={items} />
+      {loading ? <Loading /> : <ItemList items={items} />}
       </div>
     </div>
   );

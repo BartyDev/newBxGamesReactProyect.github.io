@@ -7,32 +7,32 @@ const FooterComps = () => {
         <footer className="pt-5">
           <div className="row align-items-center navTextWhiteApp">
             <div className="col-12 col-lg-3 col-md-3">
-              <img src={"/imgs/mario.png"} width={140} />
+              <img src={"/imgs/mario.png"} alt={"Mario Bross"} title="Mario Bross" width={140} />
             </div>
             <div className="col-12 col-lg-4 col-md-2">
               <ul className="nav flex-column colorRender">
                 <li className="nav-item mb-3">
-                  <a href="/" aria-current="page" className="nav-link p-0">
+                  <a href="/" aria-current="page" className="nav-link p-0" rel="noreferrer">
                     Política de Privacidad
                   </a>
                 </li>
                 <li className="nav-item mb-3">
-                  <a href="/" aria-current="page" className="nav-link p-0">
+                  <a href="/" aria-current="page" className="nav-link p-0" rel="noreferrer">
                     Términos y Condiciones
                   </a>
                 </li>
                 <li className="nav-item mb-3">
-                  <a href="/" aria-current="page" className="nav-link p-0">
+                  <a href="/" aria-current="page" className="nav-link p-0" rel="noreferrer">
                     Soporte 24/7
                   </a>
                 </li>
                 <li className="nav-item mb-3">
-                  <a href="/" aria-current="page" className="nav-link p-0">
+                  <a href="/" aria-current="page" className="nav-link p-0" rel="noreferrer">
                     Mapa
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/" aria-current="page" className="nav-link p-0">
+                  <a href="/" aria-current="page" className="nav-link p-0" rel="noreferrer">
                     FaQ
                   </a>
                 </li>
@@ -44,32 +44,32 @@ const FooterComps = () => {
                   <li className="rounded-pill bg-black fs-2 px-3 py-2">
                     <a
                       href="https://www.linkedin.com/in/bartydesing/"
-                      target={"_blank"}
+                      target={"_blank"} rel="noreferrer"
                     >
-                      <i className="fa-brands fa-linkedin text-success fs-2"></i>
+                      <i className="fa-brands fa-linkedin text-success fs-2" title="LinkedIn"></i>
                     </a>
                   </li>
                   <li className="rounded-pill bg-black fs-2 px-3 py-2">
-                    <a href="https://github.com/barty91" target={"_blank"}>
-                      <i className="fa fa-github text-success fs-2"></i>
+                    <a href="https://github.com/barty91" target={"_blank"} rel="noreferrer">
+                      <i className="fa fa-github text-success fs-2" title="GitHub"></i>
                     </a>
                   </li>
                   <li className="rounded-pill bg-black fs-2 px-3 py-2">
                     <a
                       href="https://www.instagram.com/b4rtyyt/"
-                      target={"_blank"}
+                      target={"_blank"} rel="noreferrer"
                     >
-                      <i className="fa fa-instagram text-success fs-2"></i>
+                      <i className="fa fa-instagram text-success fs-2" title="Instagram"></i>
                     </a>
                   </li>
                   <li className="rounded-pill bg-black fs-2 px-3 py-2">
-                    <a href="https://twitter.com/elvisTPA" target={"_blank"}>
-                      <i className="fa fa-twitter text-success fs-2"></i>
+                    <a href="https://twitter.com/elvisTPA" target={"_blank"} rel="noreferrer">
+                      <i className="fa fa-twitter text-success fs-2" title="Twitter"></i>
                     </a>
                   </li>
                   <li className="rounded-pill bg-black fs-2 px-3 py-2">
-                    <a href="https://wa.link/59gfcd" target={"_blank"}>
-                      <i className="fa fa-whatsapp text-success fs-2"></i>
+                    <a href="https://wa.link/59gfcd" target={"_blank"} rel="noreferrer">
+                      <i className="fa fa-whatsapp text-success fs-2" title="WhatsApp"></i>
                     </a>
                   </li>
                 </ul>
@@ -79,18 +79,18 @@ const FooterComps = () => {
                   <a
                     href="/"
                     type="button"
-                    className="btn bg-black py-3 px-4 border-white"
+                    className="btn bg-black py-3 px-4 border-white" target={"_blank"} rel="noreferrer"
                   >
-                    <img src={"/imgs/apple-font.svg"} width={90} />
+                    <img src={"/imgs/apple-font.svg"} width={90} title="AppleServices" alt={"AppleServices"} />
                   </a>
                 </div>
                 <div>
                   <a
                     href="/"
                     type="button"
-                    className="btn bg-black py-3 px-4  border-white"
+                    className="btn bg-black py-3 px-4  border-white" target={"_blank"} rel="noreferrer"
                   >
-                    <img src={"/imgs/android-font.svg"} width={90} />
+                    <img src={"/imgs/android-font.svg"} width={90} alt={"AndroidServices"} title="AndroidServices" />
                   </a>
                 </div>
               </div>

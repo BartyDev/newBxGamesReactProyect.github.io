@@ -58,11 +58,11 @@ const NavBar = () => {
                 <li className="nav-item">
                   <NavLink className="nav-link disabled text-secondary" to={"/category/soporte"}>SOPORTE 24/7</NavLink>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink className="nav-link" to={"/category/"}>ERROR 404</NavLink>
-                </li>
+                </li> */}
               </ul>
-              <hr className="colorActive" />
+              <hr className="colorActive py-1" />
               <div className="col-md-1">
                 <CartWidget />
               </div>
