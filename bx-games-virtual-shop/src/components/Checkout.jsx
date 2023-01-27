@@ -4,7 +4,7 @@ import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { Navigate } from "react-router-dom";
 
 const Checkout = () => {
-    const {cart, clear, sumTotal, cartTotal} = useContext(CartContext);
+    const { cart, clear, sumTotal, cartTotal } = useContext(CartContext);
     const [nombre, setNombre] = useState("");
     const [email, setEmail] = useState("");
     const [telefono, setTelefono] = useState("");
@@ -13,13 +13,12 @@ const Checkout = () => {
     const generarOrden = () => {
         const fecha = new Date();
         const order = {
-            buyer: {name:nombre, email:email, phone:telefono},
-            items: cart.map(item => ({id:item.id, title:item.titulo, price:item.costo, quantity:item.quantity, price_total:item.quantity * item.costo})),
-            date: `${fecha.getDate()}-${fecha.getMonth()+1}-${fecha.getFullYear()} ${fecha.getHours()}:${fecha.getMinutes()}:${fecha.getSeconds()}`,
+            buyer: { name: nombre, email: email, phone: telefono },
+            items: cart.map(item => ({ id: item.id, title: item.titulo, price: item.costo, quantity: item.quantity, price_total: item.quantity * item.costo })),
+            date: `${fecha.getDate()}-${fecha.getMonth() + 1}-${fecha.getFullYear()} ${fecha.getHours()}:${fecha.getMinutes()}:${fecha.getSeconds()}`,
             total: sumTotal(),
             quantity: cartTotal()
         };
-
         const db = getFirestore();
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then((snapShot) => {
@@ -28,49 +27,61 @@ const Checkout = () => {
         });
     }
 
+
     return (
         <div className="container">
-            <div className="row my-5">
-                <div className="col">
+            <div className="row align-items-center renderTopx">
+                <div className="col-md-6">
+                    <div className="table-responsive">
+                        <table className="table text-white">
+                            <tbody>
+                                {cart.map(item => (
+                                    <tr key={item.id}>
+                                        <td className="col-5 align-middle">
+                                            <img className="rounded-2" src={item.imagen} alt={item.titulo} width={150} title={item.titulo} />
+                                        </td>
+                                        <td className="col-4 text-center align-middle">
+                                            <p >{item.quantity}</p>
+                                        </td>
+                                        <td className="col-3 text-center align-middle">
+                                            <p>${item.quantity * item.costo}</p>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                            <tr>
+                                <td colSpan={2} className="text-end pt-y"><b>Total a Pagar</b></td>
+                                <td className="text-center text-warning py-2"><b>${sumTotal()}</b></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div className="col-md-6">
                     <form>
                         <div className="mb-3">
                             <label htmlFor="nombre" className="form-label">Nombre</label>
-                            <input type="text" className="form-control" id="nombre" placeholder="Ingrese su Nombre" onInput={(e) => {setNombre(e.target.value)}} />
+                            <input type="text" className="form-control" id="nombre" placeholder="Ingrese su Nombre" onInput={(e) => { setNombre(e.target.value) }} />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
-                            <input type="text" className="form-control" id="email" placeholder="Ingrese su Email" onInput={(e) => {setEmail(e.target.value)}} />
+                            <input type="text" className="form-control" id="email" placeholder="Ingrese su Email" onInput={(e) => { setEmail(e.target.value) }} />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="telefono" className="form-label">Teléfono</label>
-                            <input type="text" className="form-control" id="telefono" placeholder="Ingrese su Teléfono" onInput={(e) => {setTelefono(e.target.value)}} />
+                            <input type="text" className="form-control" id="telefono" placeholder="Ingrese su Teléfono" onInput={(e) => { setTelefono(e.target.value) }} />
                         </div>
-                        <button type="button" onClick={generarOrden} className="btn btn-warning">Generar Orden</button>
+                        <div className="py-3">
+                            <button type="button" onClick={generarOrden} className="btn btn-warning">Generar Orden</button>
+                        </div>
                     </form>
                 </div>
-                <div className="col">
-                    <table className="table text-white">
-                        <tbody>
-                            {cart.map(item => (
-                                <tr key={item.id}>
-                                    <td><img src={item.imagen} alt={item.titulo} width={100} /></td>
-                                    <td className="align-middle">{item.titulo}</td>
-                                    <td className="text-center align-middle">{item.quantity}</td>
-                                    <td className="text-center align-middle">${item.quantity * item.costo}</td>
-                                </tr>
-                            ))}
-                            <tr>
-                                <td colSpan={3} className="text-end"><b>Total a Pagar</b></td>
-                                <td className="text-center"><b>${sumTotal()}</b></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
             </div>
-            <div className="row my-5">
+            <div className="row mb-5">
                 <div className="col text-center">
                     {orderId ? <Navigate to={"/thankyou/" + orderId} /> : ""}
                 </div>
+            </div>
+            <div className="renderTopx">
             </div>
         </div>
     )

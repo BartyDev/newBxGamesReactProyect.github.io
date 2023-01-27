@@ -61,3 +61,60 @@ body {
 .btn-close-icon {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgba(0, 128, 0, 0.8)'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>");
 }
+
+
+/* SCROLL NAV SMOOTH */
+
+.glass{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
+  border-end-start-radius: 10px;
+  border-end-end-radius: 10px;
+}
+
+#Nav-id {
+  width: 100%;
+  top: 0;
+  transition: all .3s ease-in;
+  z-index: 99;
+}
+
+#Nav-id.active {
+  position: fixed;
+  background-color: #070a07;
+  z-index: 99;
+}
+
+.renderTop{
+  margin-top: 200px;
+}
+
+.renderTopx{
+  margin-top: 150px;
+}
+
+.renderPtop{
+  padding-top: 170px;
+}
+
+.glassyng{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+.bannerRender {
+  overflow-x: hidden;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+  .glassyng{
+    background: transparent;
+    backdrop-filter: none;
+    border-radius: none;
+  }
+  .spanProm{
+    font-size: 15px !important;
+  }
+}

@@ -9,6 +9,8 @@ import CartContextProvider from "./components/context/CartContext";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import Thanks from "./components/Thanks";
+import ItemDiseño from "./components/ItemDiseño";
+
 
 
 
@@ -19,12 +21,13 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path={"/"} element={<ItemListContainer />} />
+          <Route path={"/"} element={<ItemDiseño/>} />
+          <Route path={"/allProduct"} element={<ItemListContainer />} />
           <Route path={"/category/:id"} element={<ItemListContainer />} />
           <Route path={"/item/:id"} element={<ItemDetailContainer />} />
           <Route path={"/cart"} element={<Cart />} />
           <Route path={"/checkout"} element={<Checkout />} />
-            <Route path={"/thankyou/:id"} element={<Thanks />} />
+          <Route path={"/thankyou/:id"} element={<Thanks />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
         <FooterComps />

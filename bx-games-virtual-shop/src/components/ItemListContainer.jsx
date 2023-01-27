@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
+import {collection, getDocs, getFirestore, query, where } from "firebase/firestore";
 import { useParams} from "react-router-dom";
 import ItemList from "./ItemList";
 import Loading from "./Loading";
+
 
 
 const ItemListContainer = () => {
@@ -23,11 +24,9 @@ const ItemListContainer = () => {
 }, [id]);
 
 
-
-
   return (
-    <div className="container py-5">
-      <div className="row justify-content-center pt-5">
+    <div className="container pb-5">
+      <div className="justify-content-center">
       {loading ? <Loading /> : <ItemList items={items} />}
       </div>
     </div>
